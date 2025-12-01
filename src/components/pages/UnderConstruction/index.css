@@ -1,0 +1,39 @@
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 31.25rem;
+  padding: 1.875rem 0 1.875rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-construction svg {
+  color: #F4CE14;
+  animation: bounce 2s infinite;
+}
+
+.under-construction h2 {
+  margin: 0;
+}
+
+.under-construction p {
+  color: #666;
+  max-width: 500px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .under-construction svg {
+    animation: none;
+  }
+}
